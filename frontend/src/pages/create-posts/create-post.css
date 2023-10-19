@@ -1,0 +1,50 @@
+.create-post-title{
+    text-align: center;
+    font-size: 25px;
+    color: var(--primary-color);
+}
+.create-post-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+.create-post{
+    width: 100%;
+}
+
+.create-post-input,
+.create-post-textarea,
+.create-post-upload,.create-post-btn{
+    width:90%;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+.create-post-textarea{
+    height: 200px;
+}
+
+.create-post-upload{
+    background-color: var(--gray-color);
+    color: var(--white-color);
+}
+.create-post-btn{
+background-color: var(--dark-color);
+color: var(--white-color);
+}
+
+.invalid{
+    border: 1px solid
+    
+    
+    
+     red;
+}

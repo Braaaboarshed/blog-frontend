@@ -1,0 +1,27 @@
+.verify-email-icon{
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+.verify-email-text{
+    color: green;
+    font-size: 25px;
+    text-align: center;
+}
+
+.verify-email{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    height: calc(100vh - 160px);
+}
+.verify-email-link{
+    background-color: var(--dark-color);
+    border-radius: 10px;
+    color:var(--white-color);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}

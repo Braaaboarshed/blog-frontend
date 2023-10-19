@@ -1,0 +1,101 @@
+.profile{
+}
+
+.profile-header{
+    background-color: rgb(28, 37, 63);
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.profile-posts-list{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-image-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.profile-image{
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    
+}
+.upload-photo-form{
+    margin-left: 185px;
+    margin-top: -36px;
+
+}
+#file{
+    display: none;
+}
+
+.upload-profile-icon{
+    background-color: rgb(57, 96, 214);
+    padding: 5px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+}
+.upload-profile-photo-btn{
+    font-weight: 700;
+}
+
+.profile-username{
+    color: var(--white-color);
+    margin: 20px;
+}
+.profile-bio{
+    color:var(--white-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.user-date-joined strong{
+    color: rgb(17, 253, 17);
+    font-size: 15px;
+    font-weight: 100;
+   
+}
+.modal-holder{
+    
+}
+.user-date-joined p{
+    color: var(--white-color);
+    display: inline-block;
+}
+.profile-update-btn{
+    background-color: var(--green-color);
+    color: var(--white-color);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.delete-account-btn{
+    
+color: var(--red-color);
+padding: 10px;
+border-radius: 10px;
+border: 1px solid var(--gray-color);
+margin: 10px;
+}
+@media(max-width :620px){
+    .profile-image{
+        width: 200px;
+        height: 200px;
+    }
+    .upload-photo-form{
+        margin-left: 140px;
+        margin-top: -30px;
+    
+    }
+
+}

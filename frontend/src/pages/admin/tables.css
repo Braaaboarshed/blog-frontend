@@ -1,0 +1,122 @@
+
+.table-page{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden; 
+    min-height: calc(100vh - 150px);
+}
+
+.table-container{
+    flex: 10;
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+
+   
+}
+
+.navbar-table{
+    flex: 2;
+}
+
+table{
+    
+    text-align :center;
+    border-collapse: collapse;
+    margin: 20px 5px;
+    width:90%;
+    
+}
+tr{
+    padding: 10px;
+}
+
+
+td,th{
+    border: 1px solid black;
+}
+
+th{
+    background-color: black ;
+    color: var(--white-color);
+    padding: 10px;
+
+
+}
+
+td.username {
+    font-weight: 900;
+    font-size: 16px;
+   
+
+}
+
+td.email{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.edit-btn{
+    background-color: green;
+    font-size: 19px;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin: 5px 20px;
+    
+}
+
+.delete-btn{
+    background-color: red;
+    font-size: 19px;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+
+ 
+}
+.username .profilePhoto{
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 0 3px ;
+    border-radius: 50px;
+}
+table tr:nth-child(odd) td{
+    background-color: rgb(194, 190, 190);
+}
+.userInfo{
+ display: flex;
+ align-items: center;
+ 
+}
+Link{
+    color: black;
+}
+
+@media (max-width:520px){
+    table{
+        width: 90%;
+        display: block;
+       
+    }
+
+    td{
+        max-width: 55%;
+    }
+
+    .delete-btn,.edit-btn{
+        font-size: 10px;
+        width: 40px;
+        display: inline-block;
+    }
+    td.email{
+        font-size: 13px;
+    }
+    .userInfo{
+        display: block;
+    }
+
+}

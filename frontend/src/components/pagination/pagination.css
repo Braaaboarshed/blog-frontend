@@ -1,0 +1,31 @@
+.pagination {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gray-color);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+.page.previous,
+.page.next{
+    width: max-content;
+    padding: 0 7px;
+}
+.active{
+    background-color: var(--gray-color);
+}
+.disable{
+    color:rgb(212, 210, 210)
+}
