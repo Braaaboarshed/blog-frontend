@@ -14,7 +14,7 @@ app.use(express.json());
 //Cors policy
 
 app.use(cors({
-    origin : "http://localhost:3000",
+    origin : "https://blog-app34.netlify.app",
     
 }))
 
