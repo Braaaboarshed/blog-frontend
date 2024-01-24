@@ -8,11 +8,14 @@ import { authActions } from "../slices/authSlices";
 export function fatahPosts(pageNumber){
     return async(dispatch) =>{
         try{
+            dispatch(postActions.setLoading())
            const {data} = await  request.get(`/api/posts?pageNumber=${pageNumber}`)
            dispatch(postActions.setPosts(data))
+            dispatch(postActions.clearLoading())
         }
         catch(error){
             toast.error(error.response.error)
+            dispatch(postActions.clearLoading())
         }
     }
 }
@@ -21,11 +24,13 @@ export function fatahPosts(pageNumber){
 export function getAllPosts(){
     return async(dispatch) =>{
         try{
+             dispatch(postActions.setLoading())
            const {data} = await  request.get(`/api/posts`)
            dispatch(postActions.setPosts(data))
         }
         catch(error){
             toast.error(error.response.error)
+            dispatch(postActions.clearLoading())
         }
     }
 }
